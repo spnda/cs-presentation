@@ -6,6 +6,7 @@ const md = require("markdown-it");
 const pagesFolder = "pages";
 const resultFolder = "docs";
 
+// Create the Markdown renderer.
 const mit = md({
     html: true,
     breaks: true,
@@ -19,7 +20,12 @@ const mit = md({
     }
 });
 
-const baseHtml = fs.readFileSync("docs/base/base.html", "utf-8");
+// Move the base.html and styles.css files to the docs folder.
+for (const file of ["base.html", "styles.css"]) {
+    fs.copyFileSync(`${__dirname}/${file}`, `${__dirname}/${resultFolder}/base/${file}`);
+}
+
+const baseHtml = fs.readFileSync(`${__dirname}/${resultFolder}/base/base.html`, "utf-8");
 
 async function* getFiles(dir) {
     const dirents = await readdir(dir, { withFileTypes: true });
