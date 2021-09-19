@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"markdown-it": "^12.2.0"
+	}
+}
