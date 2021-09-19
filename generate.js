@@ -11,7 +11,7 @@ const mit = md({
     breaks: true,
 });
 
-const baseHtml = fs.readFileSync("base/base.html", "utf-8");
+const baseHtml = fs.readFileSync("docs/base/base.html", "utf-8");
 
 async function* getFiles(dir) {
     const dirents = await readdir(dir, { withFileTypes: true });
@@ -34,7 +34,7 @@ async function run() {
         // Generate the relative path to the base/ folder.
         const subfolderCount = (file.match(new RegExp("/", "g")) || []).length;
         let subfolder = "base/";
-        for (let i = 0; i <= subfolderCount; i++)
+        for (let i = 0; i < subfolderCount; i++)
             subfolder = "../" + subfolder;
 
         // Write the file and replace all placeholders.
