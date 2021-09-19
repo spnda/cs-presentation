@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cascadia-code');
 
 :root {
     --background-color: #141922;
+    --secondary-background-color: #0D1117;
     --muted-border-color: #5B6070;
 }
 
@@ -24,6 +26,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    padding-top: 1em;
     padding-bottom: 0.3em;
     border-bottom: 1px solid var(--muted-border-color);
 }
@@ -43,7 +46,30 @@ a:link, a:visited, a:hover, a:active {
     color: #7AC1FF;
 }
 
+li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 /* Code formatting needs a bit of padding */
 .hljs {
     padding: 1.5em;
+}
+
+code {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 90%;
+}
+
+/* Rendered Code examples */
+.example {
+    padding: 5px 15px 5px 15px;
+    background-color: var(--secondary-background-color);
+}
+
+/* Reset styling values for examples */
+.example_content {
+    border-bottom: initial;
+    padding-top: initial;
+    padding-bottom: initial;
 }

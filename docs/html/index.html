@@ -9,7 +9,60 @@
 
         <title>html/index.md</title>
     </head>
-    <body><div class="content"><h1>HTML</h1>
-<p>etwas html</p>
+    <body><div class="content"><h1>HTML: Editoren, Doc Types, Headings, Paragraphen</h1>
+<h2>Editoren</h2>
+<ul>
+<li>Ein Editor („herausgeben, bearbeiten“) ist ein Programm zur Erstellung und Bearbeitung von Daten.</li>
+<li>Die Arbeit mit einem Editor unterscheidet sich von der traditionellen Arbeitsweise.</li>
+<li>so ist es in der Regel möglich Veränderungen ohne Probleme zu widerrufen.<br>
+Besipiele: Texteditor, HTML-Editor, Online-Editor, XML–Editor</li>
+</ul>
+<h2>Doctypes</h2>
+<ul>
+<li>Bei dem Doctype handelt es sich nicht um ein klassisches HTML Element.</li>
+<li>Vielmehr macht der Doctype Angaben darüber, welchen Typ Dokument der Browser zu erwarten hat.</li>
+<li>Standards sehen vor, dass das Element im Quellcode jedes Web Dokuments vorhanden sein muss.</li>
+<li>Fehlt der Doctype, handelt es sich also um einen Fehler, auch wenn sich die Webseite unter Umständen dennoch korrekt darstellen lässt.</li>
+<li>Tools zur Überprüfung des Quellcodes zeigen es ebenfalls als Fehler an, wenn der Doctype im Quellcode eines HTML Dokuments fehlt.</li>
+<li>Mit ihm wird der verwendete Dokumenttyp im Kopfbereich deklariert.</li>
+<li>Je nach Dokumenttyp sind in HTML, XHTML oder XML unterschiedliche Elemente definiert, die der Browser erkennt und umsetzt</li>
+</ul>
+<p>Der doctype bei einem HTML dokument wird am Anfang der Datei so definiert:</p>
+<pre class="hljs"><code><span class="hljs-meta">&lt;!doctype <span class="hljs-keyword">html</span>&gt;</span>
+</code></pre>
+<h2>Headings</h2>
+<ul>
+<li>Headings, also zu Deutsch Überschriften, bezeichnet nicht nur ein stilistisches Mittel zur Textgestaltung, sondern auch einen wichtigen Aspekt im Online Marketing.</li>
+<li>Man unterscheidet zwischen verschiedenen Größen: H1, H2, H3, H4, H5 und H6.</li>
+<li>Hierbei ist H1 die größte Überschrift und H6 die kleinste; also rein von der Schriftgröße her betrachtet.</li>
+<li>Da natürlich die größte Überschrift auch die meiste Aufmerksamkeit auf sich ziehen wird, kommt den unterschiedlichen Größen auch eine unterschiedliche Wichtigkeit zuteil.</li>
+</ul>
+<p>Ein Beispie für Heading-elemente:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Sehr Große Überschrift<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Große Überschrift<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Mittelgroße Überschrift<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Sehr kleine Überschrift<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+</code></pre>
+<div class="example">
+    <h1 class="example_content">Sehr Große Überschrift</h1>
+    <h2 class="example_content">Große Überschrift</h2>
+    <h4 class="example_content">Mittelgroße Überschrift</h4>
+    <h6 class="example_content">Sehr kleine Überschrift</h6>
+</div>
+<h2>Paragraphen</h2>
+<ul>
+<li>Das p-Element definiert einen Textabsatz.</li>
+<li>Absätze dienen der Gliederung eines Textes,zur Einteilung in aufzählendem Schrifttum, wie bei Gesetzen, Verträgen oder Lehrbüchern</li>
+</ul>
+<p>Ein Beispiel für ein Paragraph-Element:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Ein Textabsatz, mit einem <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span> Zeilenumbruch.
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<div class="example">
+    <p class="example_content">
+        Ein Textabsatz, mit einem <br/> Zeilenumbruch.
+    </p>
+</div>
 </div></body>
 </html>

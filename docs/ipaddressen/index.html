@@ -9,7 +9,46 @@
 
         <title>ipaddressen/index.md</title>
     </head>
-    <body><div class="content"><h1>IP-Adressen</h1>
-<p>IDK?</p>
+    <body><div class="content"><h1>NETZ: IP-Adressen</h1>
+<p>Eine IP-Adresse ist eine Ziffernfolge, die dazu dient Daten von Computern untereinander, mithilfe eines Netzwerks, zu verschicken.</p>
+<p>Man kann sich die IP wie eine komplette Anschrift mit Namen, Straße, Hausnummer, Postleitzahl und Stadt vorstellen. Wird eine Bestellung in einem Onlineshop getätigt, werden genau diese Angaben benötigt, um das Paket mit den Waren zuzusenden.</p>
+<p>Auch virtuelle “Pakete” brauchen eine genaue Anschrift. Richtet man eine Anfrage an Google, wird zuerst ein Paket mit einer Anfrage an die IP von Google geschickt,<br>
+die dann an die eigene IP ein Paket mit den Ergebnissen zurückschickt.</p>
+<h3>Klassische IPv4</h3>
+<p>Bsp: 192.168.2.109</p>
+<ul>
+<li>Besteht aus 4 Zahlenblöcken, jeweils aus maximal 3 Zahlen.</li>
+<li>Durch Punkte getrennt sind.</li>
+<li>Maximal 32-bit, daher 8 bits pro Block.</li>
+<li>Höchster Wert liegt bei 255.255.255.255.</li>
+</ul>
+<h3>Neue IPv6</h3>
+<p>Bsp: 2001:db8::8a2e:370:7334</p>
+<ul>
+<li>Besteht aus 8 Zahlenblöcken, jeweils aus 4 hexadezimalen Ziffern.</li>
+<li>Mit Doppelpunkten getrennt.</li>
+<li>Maximal 128-bit, daher 16 bits pro Block.</li>
+<li>Entstanden, da es nicht mehr genug IPv4 Adressen gibt.</li>
+</ul>
+<img src="https://www.ionos.de/digitalguide/fileadmin/DigitalGuide/Screenshots_2018/aufbau-von-ipv4-und-ipv6-adressen.png" alt="IPv4vsIPv6" width="60%" />
+<h2>Logische Adresse</h2>
+<p>Die logische Adresse ist eine IP-Adresse, welche nicht auf einem Gerät konstant gespeichert wird, sondern beim einloggen in einem Netzwerk diesem zugewiesen wird.<br>
+Dadurch kann sich die logische Adresse andauernd ändern, da sie zufällig zugewiesen wird. Die physische Adresse hingegen ändert sich nie und ist im Prinzip<br>
+wie eine Identifikationsnummer oder &quot;Namen&quot; eines einzelnen Geräts.</p>
+<p>Beispiel an einem Auto:</p>
+<ul>
+<li>physische Adresse → Identifizierungsnummer</li>
+<li>logische Adresse → Nummernschild</li>
+</ul>
+<h2>Subnetz und Subnetzmaske</h2>
+<p>Als Subnetz wird ein Teilnetz eines Netzwerkes beim Internetprotokoll bezeichnet.<br>
+Bei einem Subnetz werden die ersten 4 bits des letzten Blocks aufgeteilt und als Gruppierung genutzt.<br>
+Mit einer Subnetzmaske kann mithilfe einem bitwise AND das Subnetz identifiziert werden.</p>
+<p>Vorteile:</p>
+<ul>
+<li>Datenpakete werden direkt miteinander ausgetauscht, was die Netzlast reduziert</li>
+<li>Systemadministrator behält einen guten Überblick über die einzelnen Hosts</li>
+<li>Sicherheit erhöht sich, da die Netze voneinander getrennt sind</li>
+</ul>
 </div></body>
 </html>
