@@ -1,5 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --background-color: #141922;
+    --muted-border-color: #5B6070;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    color: white;
+    background: var(--background-color);
+    margin: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--muted-border-color);
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--muted-border-color);
+}
+
+hr {
+    border: 0;
+    height: 0.25em;
+    background-color: var(--muted-border-color);
+}
+
+p {
+    font-size: 1em;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #7AC1FF;
 }
