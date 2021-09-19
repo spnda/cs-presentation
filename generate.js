@@ -1,6 +1,6 @@
 const fs = require("fs");
+const hljs = require("highlight.js");
 const { readdir } = require("fs").promises;
-const { resolve } = require("path");
 const md = require("markdown-it");
 
 const pagesFolder = "pages";
@@ -9,6 +9,14 @@ const resultFolder = "docs";
 const mit = md({
     html: true,
     breaks: true,
+    highlight: (str, lang) => {
+        if (lang && hljs.getLanguage(lang)) {
+            return '<pre class="hljs"><code>' +
+               hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+               '</code></pre>';
+        }
+        return '';
+    }
 });
 
 const baseHtml = fs.readFileSync("docs/base/base.html", "utf-8");

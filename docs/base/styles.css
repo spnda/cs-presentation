@@ -42,3 +42,8 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #7AC1FF;
 }
+
+/* Code formatting needs a bit of padding */
+.hljs {
+    padding: 1.5em;
+}
