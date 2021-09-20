@@ -47,3 +47,17 @@ Vorteile:
 - Datenpakete werden direkt miteinander ausgetauscht, was die Netzlast reduziert
 - Systemadministrator behält einen guten Überblick über die einzelnen Hosts
 - Sicherheit erhöht sich, da die Netze voneinander getrennt sind
+
+Mit der folgenden Tabelle läst sich visualisieren, wie durch die bit-Rechung man den Netzwerkteil und den Geräteteil bestimmen kann.
+
+|     | 11000000.10101000.00000001.10000001 | 192.168.1.129 | IPv4-Adresse |
+|:---:|:-----------------------------------:|:-------------:|:------------:|
+| AND | 11111111.11111111.11111111.00000000 | 255.255.255.0 | Netzmaske    |
+| =   | 11000000 10101000 00000001 00000000 | 192.168.1.0   | Netzwerkteil |
+
+<br/>
+
+|     | 11000000.10101000.00000001.10000001 | 192.168.1.129 | IPv4-Adresse |
+|:---:|:-----------------------------------:|:-------------:|:------------:|
+| AND | 00000000.00000000.00000000.11111111 | 0.0.0.255     | Netzmaske    |
+| =   | 00000000.00000000.00000000.10000001 | 0.0.0.129     | Geräteteil   |

@@ -51,6 +51,25 @@ li {
     padding-bottom: 2px;
 }
 
+/* Table formatting */
+th {
+    /* For the tiny padding between the elements and the outer border. */
+    padding: 15px;
+}
+
+table td {
+    padding: 15px;
+}
+
+table th + th, table td + td {
+    border-left: 1px solid var(--muted-border-color);
+}
+
+table {
+    border: 2px solid var(--muted-border-color);
+    border-collapse: separate;
+}
+
 /* Code formatting needs a bit of padding */
 .hljs {
     padding: 1.5em;
